@@ -108,25 +108,45 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                 <section>
                    <h3>Testimonials</h3> 
                     <section>
-                        <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
+                        <picture>
+                            <source media="(min-width:1024px)" srcset="images/miranda-blake-L.png">
+                            <source media="(min-width:780px)" srcset="images/miranda-blake-M.png">
+                            <source media="(min-width:320px)" srcset="images/miranda-blake-S.png">
+                            <img src="images/miranda-blake-M.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
+                        </picture>
                         <h4>Amanda Blake</h4>
                         <p>Traveling From: London, England</p>
                         <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                     </section>
                     <section>
-                        <img src="images/max-winter.png" alt="Max Winter">
+                        <picture>
+                            <source media="(min-width:1024px)" srcset="images/max-winter-L.png">
+                            <source media="(min-width:780px)" srcset="images/max-winter-M.png">
+                            <source media="(min-width:320px)" srcset="images/max-winter-S.png">
+                            <img src="images/max-winter-M.png" alt="Max Winter has short textured light brown hair and a trimmed beard, and is wearing a brown button up shirt.">
+                          </picture>
                         <h4>Max Winter</h4>
                         <p>Traveling From: Berlin, Germany</p>
                         <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                     </section>
                     <section>
-                        <img src="images/ines-villegoes.png" alt="lady person">
+                        <picture>
+                            <source media="(min-width:1024px)" srcset="images/ines-villegoes-L.png">
+                            <source media="(min-width:780px)" srcset="images/ines-villegoes-M.png">
+                            <source media="(min-width:320px)" srcset="images/ines-villegoes-S.png">
+                            <img src="images/ines-villegoes-M.png" alt="Inés Villegoes has long auborn hair and is wearing a brown long sleeve shirt under a bulletproof vest that says policia. ">
+                          </picture>
                         <h4>Inés Villegos</h4>
                         <p>Traveling From: Barcelona, Spain</p>
                         <q>A very safe environment for all travelers.</q>
                     </section>
                     <section>
-                        <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
+                        <picture>
+                            <source media="(min-width:1024px)" srcset="images/carmen-lorenzo-L.png">
+                            <source media="(min-width:780px)" srcset="images/carmen-lorenzo-M.png">
+                            <source media="(min-width:320px)" srcset="images/carmen-lorenzo-S.png">
+                            <img src="images/carmen-lorenzo-M.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
+                          </picture>
                         <h4>Carmen Lorenzo</h4> 
                         <p>Traveling From: Madrid, Spain</p>
                         <q>Live, laugh, love-- everything you need in Majorca.</q>
@@ -158,25 +178,74 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                 <section>
                     <h3>Contact Us</h3>
                     <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+                        
+                        <!--first name-->
                         <label for="fName">First Name<span>*</span></label>
-                        <input type="text" name="fName" id="fName" autocomplete="given-name" required>
+                        <input 
+                            type="text" 
+                            name="fName" 
+                            id="fName" 
+                            autocomplete="given-name" 
+                            required>
+                        
+                        <!--last name-->
                         <label for="lName">Last Name<span>*</span></label>
-                        <input type="text" name="lName" id="lName" autocomplete="family-name" required>
+                        <input 
+                            type="text" 
+                            name="lName" 
+                            id="lName" 
+                            autocomplete="family-name" 
+                            required>
                         <fieldset>
+
+                            <!--contact method radio select-->
                             <legend>Contact Method<span>*</span></legend>
-                            <input type="radio" name="contactPref" id="prefEmail" required>
+                            <input 
+                                type="radio" 
+                                name="contactPref" 
+                                id="prefEmail" 
+                                required>
+                            
+                            <!--email-->
                             <label for="prefEmail">Email</label>
-                            <input type="radio" name="contactPref" id="prefText">
+                            <input 
+                                type="radio" 
+                                name="contactPref" 
+                                id="prefText">
+
+                            <!--text-->
                             <label for="prefText">Text</label>
-                            <input type="radio" name="contactPref" id="prefPhone">
+                            <input 
+                                type="radio" 
+                                name="contactPref" 
+                                id="prefPhone">
+
+                            <!--phone-->        
                             <label for="prefPhone">Phone</label>
                         </fieldset>
+
+                        <!--email address-->
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" autocomplete="email">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            autocomplete="email">
+
+                        <!--phone-->    
                         <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" autocomplete="tel">
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            id="phone" 
+                            autocomplete="tel">
+
+                        <!--destination-->    
                         <label for="destination">Destination<span>*</span></label>
-                        <select name="destination" id="destination" required>
+                        <select 
+                            name="destination" 
+                            id="destination" 
+                            required>
                             <option value="">Choose an Option</option>
                             <option value="barcelona">Barcelona</option>
                             <option value="granada">Granada</option>
@@ -187,8 +256,13 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                             <option value="tenerife">Tenerife</option>
                             <option value="valencia">Valencia</option>
                         </select>
+
+                        <!--travel time-->
                         <label for="travelTime">Travel Time<span>*</span></label>
-                        <select name="travelTime" id="travelTime" required>
+                        <select 
+                            name="travelTime" 
+                            id="travelTime" 
+                            required>
                             <option value="">Choose an Option</option>
                             <option value="fall">Fall</option>
                             <option value="winter">Winter</option>
@@ -196,7 +270,13 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                             <option value="summer">Summer</option>
                             <option value="flexible">Flexible</option>
                         </select>
-                        <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">
+
+                        <!--submit button-->
+                        <input 
+                            type="submit" 
+                            name="mySubmit" 
+                            id="mySubmit" 
+                            value="Submit Form">
                     </form>
                 </section>
             </article>
