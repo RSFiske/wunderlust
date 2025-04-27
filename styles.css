@@ -60,26 +60,30 @@ a {
 /* -------------------- BASE MOBILE STYLES -------------------- */
 
 /* Typography */
-h1, h2, h3, h4, p, q, label, nav, form, button {
+h4, p, q, label, nav, form, button {
   font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3 {
   font-weight: 600;
+  font-family: 'Molle', cursive;
 }
 
 h1 {
   font-size: 2.5rem;
   text-align: left;
+  font-family: 'Molle', cursive;
 }
 
 h2 {
   font-size: 2rem;
   text-align: left;
+  font-family: 'Molle', cursive;
 }
 
 h3 {
   font-size: 1.5rem;
+  font-family: 'Molle', cursive;
 }
 
 h4 {
@@ -104,6 +108,7 @@ header {
     margin-right: 0px;
 }
 header h1 {
+    font-family: 'Molle', cursive;
     grid-column: 1 / 3;
     grid-row: 2;
     font-size: 2.5rem;
@@ -262,12 +267,12 @@ nav .active a {
 }
 
 #plan h3 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 40px;
     text-align: left;
     padding-bottom: 18px;
     padding-right: 36px;
+    font-family: 'Molle', cursive;
 }
 #plan section h4 {
     font-size: 26px;
@@ -297,7 +302,7 @@ nav .active a {
 }
 
 #testimonials h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Molle', cursive;
     font-size: 40px;
     font-weight: 400;
     text-align: left;
@@ -344,7 +349,7 @@ nav .active a {
 }
   
 #about h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Molle', cursive;
     font-size: 40px;
     font-weight: 400;
     color: var(--black);
@@ -387,7 +392,7 @@ nav .active a {
 
 /* Contact */
 #contact h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Molle', cursive;
     font-size: 40px;
     font-weight: 400;
     text-align: left;
@@ -548,7 +553,7 @@ header img {
         
 header h1 {
     grid-area: title;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Molle', cursive;
     font-size: 3rem;
     font-weight: 600;
     text-align: left;
